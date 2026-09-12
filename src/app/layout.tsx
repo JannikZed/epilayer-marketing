@@ -12,16 +12,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "EpilaYer — Der Layer über eurem ERP",
+    default: "EpilaYer — KI-Automatisierung für euer ERP",
     template: "%s · EpilaYer",
   },
   description:
-    "EpilaYer bereitet Bestellungen, Preislisten und Belege für euer ERP vor. Ihr prüft und gebt frei — ohne Migration.",
+    "Mails, Excel und Scans mit KI auslesen und freigabereif ins ERP bringen. Automatisierung für Innendienst — ohne Migration.",
   metadataBase: new URL("https://epilayer.de"),
   openGraph: {
     title: "EpilaYer",
     description:
-      "Der Layer über eurem ERP. Vorgänge vorbereiten, Freigabe behalten.",
+      "Mails, Excel und Scans automatisch ins ERP. Mit KI. Mit Freigabe.",
     locale: "de_DE",
     type: "website",
   },

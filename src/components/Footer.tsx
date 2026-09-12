@@ -19,7 +19,7 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-2 max-w-sm text-[0.9rem] text-muted">
-            Der Layer über eurem ERP — Vorgänge vorbereiten, Freigabe behalten.
+            KI-Automatisierung für Bestellung, Preisliste und Beleg — mit Freigabe.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-8 gap-y-3 text-[0.9rem] text-muted">

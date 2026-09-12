@@ -10,16 +10,17 @@ export default function HomePage() {
   return (
     <>
       <section className="mx-auto max-w-site px-6 pb-12 pt-[64px]">
-        <h1 className="m-0 max-w-[14ch] text-[clamp(2.25rem,4.5vw,3.1rem)] font-semibold leading-[1.1] tracking-[-0.03em]">
-          Der Layer über eurem ERP.
+        <h1 className="m-0 max-w-[17ch] text-[clamp(2.25rem,4.5vw,3.1rem)] font-semibold leading-[1.1] tracking-[-0.03em]">
+          Mails, Excel und Scans automatisch ins ERP.
         </h1>
-        <p className="mt-4 max-w-[36rem] text-[1.15rem] text-muted">
-          EpilaYer bereitet Vorgänge vor. Ihr gebt frei — dann geht es ins
-          System.
+        <p className="mt-4 max-w-[40rem] text-[1.15rem] text-muted">
+          EpilaYer liest Bestellungen, Preislisten und Wiegescheine mit KI aus,
+          erkennt Kunde, Artikel und Mengen und legt den Buchungsvorschlag
+          bereit. Schreiben ins ERP erst nach eurer Freigabe.
         </p>
         <p className="mt-3 max-w-[38rem] text-[1rem] text-muted">
-          Bestellungen, Preislisten, Wiegescheine und Mobile — angebunden an
-          euer bestehendes ERP. Ohne Migration.
+          Automatisierung für den Innendienst — angebunden an euer bestehendes
+          ERP. Ohne Migration, ohne Tipparbeit.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a
@@ -54,7 +55,7 @@ export default function HomePage() {
           />
           <JobCard
             title="Mobile App"
-            body="Außendienst und Mobile am ERP — inkl. Metz-Proof."
+            body="Außendienst-App am ERP. Bei Metz bereits im Einsatz."
             href="/#mobile"
           />
           <JobCard
