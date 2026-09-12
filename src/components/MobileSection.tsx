@@ -27,7 +27,7 @@ export function MobileSection() {
         <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h2 className="m-0 max-w-[20ch] text-[1.6rem] font-semibold tracking-[-0.02em]">
-              Mobile Apps für Nischen-ERP
+              Mobile Apps für euer ERP
             </h2>
             <p className="mt-2.5 max-w-xl text-muted">
               EpilaYer bringt ausgewählte Prozesse aufs Handy — angebunden an

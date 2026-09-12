@@ -23,7 +23,7 @@ Stand: 2026-09-12. Locked decisions sind verbindlich.
 
 ### Positionierung
 - [ ] ERP-Pills final: Service ERP L3 · enwis · Sage 100 · … welche noch / welche streichen?
-- [ ] „Weitere Nischen-ERPs“ so lassen oder konkrete Liste?
+- [x] Kein „Nischen-ERP“ in Copy — schlicht „ERP“ / „weitere ERPs“
 
 ### Demo-Inhalt
 - [ ] Beispiel-Firmen/Produkte in den Demos OK oder Wunsch-Branchen?

@@ -54,7 +54,7 @@ export default function HomePage() {
           />
           <JobCard
             title="Mobile App"
-            body="Außendienst und Mobile am Nischen-ERP — inkl. Metz-Proof."
+            body="Außendienst und Mobile am ERP — inkl. Metz-Proof."
             href="/#mobile"
           />
           <JobCard
@@ -127,7 +127,7 @@ export default function HomePage() {
                 <span className="pill">Service ERP L3</span>
                 <span className="pill">enwis</span>
                 <span className="pill">Sage 100</span>
-                <span className="pill">weitere Nischen-ERPs</span>
+                <span className="pill">weitere ERPs</span>
               </div>
             </div>
           </div>
