@@ -57,7 +57,7 @@ export function MobileSection() {
               im Innendienst.
             </p>
 
-            {/* Phone frame mock */}
+            {/* Phone frame · product UI illustration */}
             <div className="mx-auto w-[260px] rounded-[2rem] border-[3px] border-ink/80 bg-ink p-2 shadow-soft">
               <div className="overflow-hidden rounded-[1.55rem] bg-canvas">
                 <div className="flex items-center justify-between bg-surface px-4 py-2.5 text-[0.7rem] text-muted">
@@ -112,7 +112,7 @@ export function MobileSection() {
               </div>
             </div>
             <p className="mt-3 text-center text-[0.8rem] text-muted">
-              Mock-UI · Metz Außendienst als laufender Proof
+              Produkt-UI · Außendienst-App bei Metz im Einsatz
             </p>
             <div className="mt-4 text-center">
               <Link

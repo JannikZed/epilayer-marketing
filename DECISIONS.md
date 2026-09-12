@@ -8,12 +8,18 @@ Stand: 2026-09-12. Locked decisions sind verbindlich.
 - [x] **Metz** darf öffentlich als Kunde genannt werden; **Außendienst-App** als Proof
 - [x] Nie **Agrarhandel** sagen (Branche/Wort vermeiden)
 - [x] **Impressum:** trieb.work OHG, Leonhardstr 20a
-- [x] Interactive Demos sind TOP — EmailOrderDemo, PriceListDemo, WiegescheinDemo Qualität halten
+- [x] Interactive Demos sind TOP — EmailOrderDemo, PriceListDemo, WiegescheinDemo, PortalDemo, SupportAgentDemo Qualität halten
 - [x] Homepage: starker Positioning-Hero → Job-Routing zu Subpages → Demos → Mobile/Proof → Flow/ERP/Security/CTA
 - [x] Logo-Mark (orange Layer) in Header + Favicon; Wordmark EpilaYer daneben
 - [x] Job-Seiten als eigene URLs unter `/loesungen/...`
 - [x] Impressum/Datenschutz: eigene Stubs unter `/impressum`, `/datenschutz` (trieb.work OHG)
 - [x] Repo: `JannikZed/epilayer-marketing`
+- [x] Kein „Nischen-ERP“ in Copy — schlicht „ERP“ / „weitere ERPs“
+- [x] **Keine Branchen-Vertical-Landingpages** — Produktion/Logistik nur in Copy weben
+- [x] Positionierung **enterprise / experienced**: Metz, Freigabe, Security, ERP = System of Record
+- [x] Lösungssäulen ergänzt: **B2B Kundenportal** (`/loesungen/kundenportal`), **Support-Agent** (`/loesungen/support-agent`)
+- [x] Proof: kein „Mock-UI“ — Produkt-UI / laufender Einsatz
+- [x] Qualitative Outcomes only — keine erfundenen KPIs/Zahlen
 
 ## Offen / Feintuning
 
@@ -23,7 +29,6 @@ Stand: 2026-09-12. Locked decisions sind verbindlich.
 
 ### Positionierung
 - [ ] ERP-Pills final: Service ERP L3 · enwis · Sage 100 · … welche noch / welche streichen?
-- [x] Kein „Nischen-ERP“ in Copy — schlicht „ERP“ / „weitere ERPs“
 
 ### Demo-Inhalt
 - [ ] Beispiel-Firmen/Produkte in den Demos OK oder Wunsch-Branchen?
@@ -36,7 +41,7 @@ Stand: 2026-09-12. Locked decisions sind verbindlich.
 - [ ] Analytics (Plausible / GA / keines) für Preview?
 
 ### Deploy
-- [ ] Preview-Host: Vercel unter welchem Team/Account?
+- [x] Vercel Team-Projekt: `epilayer-marketing` / `team_DWmwXT06LmObdlKA94gALyfm`
 - [ ] Später Origin-Namespace + Vercel↔Origin — ja/nein?
 - [ ] Transfer nach `trieb-work` sobald Signed-Commits/Bypass geklärt?
 

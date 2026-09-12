@@ -3,8 +3,10 @@ import Link from "next/link";
 
 const nav = [
   { href: "/#loesungen", label: "Lösungen" },
+  { href: "/loesungen/kundenportal", label: "Kundenportal" },
+  { href: "/loesungen/support-agent", label: "Support-Agent" },
   { href: "/#mobile", label: "Mobile" },
-  { href: "/#erp", label: "Für euer ERP" },
+  { href: "/#referenzen", label: "Referenzen" },
   { href: "/#sicherheit", label: "Sicherheit" },
 ];
 
@@ -28,7 +30,7 @@ export function Header() {
             Epila<span className="text-accent">Y</span>er
           </span>
         </Link>
-        <nav className="hidden items-center gap-[22px] text-[0.95rem] text-muted md:flex">
+        <nav className="hidden items-center gap-[18px] text-[0.9rem] text-muted lg:flex">
           {nav.map((item) => (
             <Link
               key={item.href}

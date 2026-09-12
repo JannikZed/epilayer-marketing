@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     template: "%s · EpilaYer",
   },
   description:
-    "Mails, Excel und Scans mit KI auslesen und freigabereif ins ERP bringen. Automatisierung für Innendienst — ohne Migration.",
+    "Mails, Excel und Scans mit KI auslesen und freigabereif ins ERP bringen. Dazu B2B-Portal und Support-Agents — ohne Migration.",
   metadataBase: new URL("https://epilayer.de"),
   openGraph: {
     title: "EpilaYer",
     description:
-      "Mails, Excel und Scans automatisch ins ERP. Mit KI. Mit Freigabe.",
+      "Mails, Excel und Scans automatisch ins ERP. Portal & Agents. Mit Freigabe.",
     locale: "de_DE",
     type: "website",
   },

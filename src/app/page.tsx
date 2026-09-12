@@ -18,9 +18,9 @@ export default function HomePage() {
           erkennt Kunde, Artikel und Mengen und legt den Buchungsvorschlag
           bereit. Schreiben ins ERP erst nach eurer Freigabe.
         </p>
-        <p className="mt-3 max-w-[38rem] text-[1rem] text-muted">
-          Automatisierung für den Innendienst — angebunden an euer bestehendes
-          ERP. Ohne Migration, ohne Tipparbeit.
+        <p className="mt-3 max-w-[40rem] text-[1rem] text-muted">
+          Dazu B2B-Kundenportal und interne Support-Agents mit eurem
+          Produktwissen — angebunden an das bestehende ERP. Ohne Migration.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a
@@ -52,6 +52,16 @@ export default function HomePage() {
             title="Wiegeschein erfassen"
             body="Scan oder PDF auslesen und den Vorgang vorbereiten."
             href="/loesungen/wiegeschein"
+          />
+          <JobCard
+            title="B2B Kundenportal"
+            body="Kunden pflegen Stammdaten, bestellen und greifen auf Produktwissen zu."
+            href="/loesungen/kundenportal"
+          />
+          <JobCard
+            title="Support-Agent / Produktwissen"
+            body="Interner KI-Agent für Innendienst — Docs, Stammdaten, Historie."
+            href="/loesungen/support-agent"
           />
           <JobCard
             title="Mobile App"
@@ -100,7 +110,7 @@ export default function HomePage() {
           <div className="section-label">So landet es im ERP</div>
           <FlowStrip
             steps={[
-              { title: "Eingang", detail: "Mail, PDF, Excel, Scan, App" },
+              { title: "Eingang", detail: "Mail, PDF, Excel, Scan, Portal, App" },
               { title: "Auslesen", detail: "Felder zuordnen" },
               { title: "Prüfen", detail: "Ihr schaut kurz drüber" },
               { title: "Ins ERP", detail: "Nach der Freigabe" },
@@ -118,8 +128,10 @@ export default function HomePage() {
                 EpilaYer dockt an euer ERP an.
               </h2>
               <p className="mt-2.5 max-w-xl text-muted">
-                Für die üblichen Prozesse gibt es fertige Bausteine. Fehlt
-                etwas, bauen wir ihn dazu. Euer ERP bleibt System of Record.
+                Für die üblichen Prozesse gibt es fertige Bausteine — inkl.
+                Portal und Support-Agent. Fehlt etwas, bauen wir ihn dazu. Euer
+                ERP bleibt System of Record. Erfahrung mit produktiven
+                Anbindungen.
               </p>
             </div>
             <div>
@@ -136,19 +148,54 @@ export default function HomePage() {
       </section>
 
       <section id="referenzen" className="border-t border-line">
-        <div className="mx-auto max-w-site px-6 py-12">
-          <div className="section-label">Proof</div>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.95rem] text-muted">
-            <span>
-              Läuft bei Metz (Außendienst-App) und weiteren mittelständischen
-              Betrieben mit eigenem ERP
-            </span>
-            <Link
-              href="#mobile"
-              className="font-semibold text-accent no-underline hover:opacity-80"
-            >
-              Mobile ansehen →
-            </Link>
+        <div className="mx-auto max-w-site px-6 py-14">
+          <div className="section-label">Referenzen &amp; Erfahrung</div>
+          <h2 className="m-0 max-w-[22ch] text-[1.5rem] font-semibold tracking-[-0.02em]">
+            Produktiv im Mittelstand — ERP-kritische Prozesse mit Freigabe
+          </h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            <article className="rounded-card border border-line bg-surface p-6 shadow-soft">
+              <div className="text-[0.75rem] font-semibold uppercase tracking-[0.06em] text-muted">
+                Kunde · Metz
+              </div>
+              <h3 className="mt-2 m-0 text-[1.15rem] font-semibold tracking-[-0.01em]">
+                Außendienst-App am ERP
+              </h3>
+              <p className="mt-2.5 m-0 text-[0.95rem] text-muted">
+                Bei Metz läuft die Außendienst-App von EpilaYer produktiv über
+                dem ERP. Besuche und Vorgänge kommen vom Feld; Freigabe und
+                Buchung bleiben im Innendienst.
+              </p>
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-[0.95rem] text-muted">
+                <li>Schnellerer Übergang vom Außendienst in den Innendienst</li>
+                <li>Weniger Rückfragen zu Besuchen und Auftragsdaten</li>
+                <li>Freigabe im Innendienst, bevor etwas ins ERP geschrieben wird</li>
+              </ul>
+              <Link
+                href="#mobile"
+                className="mt-5 inline-block text-[0.9rem] font-semibold text-accent no-underline hover:opacity-80"
+              >
+                Mobile UI ansehen →
+              </Link>
+            </article>
+            <article className="rounded-card border border-line bg-surface p-6 shadow-soft">
+              <div className="text-[0.75rem] font-semibold uppercase tracking-[0.06em] text-muted">
+                Weitere Kunden
+              </div>
+              <h3 className="mt-2 m-0 text-[1.15rem] font-semibold tracking-[-0.01em]">
+                Mittelstand mit eigenem ERP
+              </h3>
+              <p className="mt-2.5 m-0 text-[0.95rem] text-muted">
+                Weitere mittelständische Betriebe setzen EpilaYer für
+                dokumenten- und mailbasierte Prozesse ein — Produktion und
+                Logistik inklusive, immer mit dem ERP als System of Record.
+              </p>
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-[0.95rem] text-muted">
+                <li>Erfahrung mit produktiven ERP-Anbindungen</li>
+                <li>Freigabe- und Rollenlogik für kritische Buchungen</li>
+                <li>Sicherheit: lesen zuerst, schreiben nach Freigabe</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
@@ -162,7 +209,8 @@ export default function HomePage() {
                 Freigabe bleibt bei euch
               </h3>
               <p className="mt-2 text-[0.95rem] text-muted">
-                Nichts geht ins ERP, bevor jemand aus eurem Team freigibt.
+                Nichts geht ins ERP, bevor jemand aus eurem Team freigibt —
+                auch im Portal und bei Agent-Entwürfen.
               </p>
             </div>
             <div className="rounded-card border border-line bg-surface p-5">
@@ -171,7 +219,7 @@ export default function HomePage() {
               </h3>
               <p className="mt-2 text-[0.95rem] text-muted">
                 Stammdaten und Belege werden gelesen. Schreiben erst nach
-                Freigabe.
+                Freigabe. Rechte und Audit nachvollziehbar.
               </p>
             </div>
             <div className="rounded-card border border-line bg-surface p-5">
@@ -179,7 +227,8 @@ export default function HomePage() {
                 Euer ERP bleibt
               </h3>
               <p className="mt-2 text-[0.95rem] text-muted">
-                Keine Migration. EpilaYer dockt an und bereitet Vorgänge vor.
+                Keine Migration. EpilaYer dockt an und bereitet Vorgänge vor —
+                System of Record bleibt das ERP.
               </p>
             </div>
           </div>
