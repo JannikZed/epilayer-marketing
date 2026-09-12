@@ -3,10 +3,10 @@ import Link from "next/link";
 const tiles = [
   {
     title: "Außendienst",
-    body: "Besuche, Notizen und Aufträge vom Hof — direkt ans ERP.",
+    body: "Besuche, Notizen und Aufträge unterwegs — direkt ans ERP.",
   },
   {
-    title: "Lager & Hof",
+    title: "Lager & Wareneingang",
     body: "Bestände und Belege erfassen, wo die Arbeit stattfindet.",
   },
   {
@@ -73,7 +73,7 @@ export function MobileSection() {
                     <div className="text-[0.9rem] font-semibold">4 Besuche</div>
                   </div>
                   {[
-                    { name: "Hof Müller", status: "Unterwegs", tone: "warn" },
+                    { name: "Müller Technik GmbH", status: "Unterwegs", tone: "warn" },
                     { name: "Nordwerk KG", status: "Erledigt", tone: "ok" },
                     { name: "PackFilm AG", status: "Offen", tone: "muted" },
                   ].map((row) => (

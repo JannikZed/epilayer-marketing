@@ -10,16 +10,16 @@ export default function HomePage() {
   return (
     <>
       <section className="mx-auto max-w-site px-6 pb-12 pt-[64px]">
-        <p className="mb-3 text-[0.8rem] font-semibold uppercase tracking-[0.06em] text-accent">
-          Der Layer über eurem ERP
-        </p>
-        <h1 className="m-0 max-w-[18ch] text-[clamp(2.1rem,4.2vw,2.9rem)] font-semibold leading-[1.12] tracking-[-0.03em]">
+        <h1 className="m-0 max-w-[14ch] text-[clamp(2.25rem,4.5vw,3.1rem)] font-semibold leading-[1.1] tracking-[-0.03em]">
+          Der Layer über eurem ERP.
+        </h1>
+        <p className="mt-4 max-w-[36rem] text-[1.15rem] text-muted">
           EpilaYer bereitet Vorgänge vor. Ihr gebt frei — dann geht es ins
           System.
-        </h1>
-        <p className="mt-4 max-w-[38rem] text-[1.1rem] text-muted">
-          Bestellungen, Preislisten, Wiegescheine und Mobile — strukturiert für
-          euren Innendienst, angebunden an euer bestehendes ERP. Ohne Migration.
+        </p>
+        <p className="mt-3 max-w-[38rem] text-[1rem] text-muted">
+          Bestellungen, Preislisten, Wiegescheine und Mobile — angebunden an
+          euer bestehendes ERP. Ohne Migration.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a
@@ -54,7 +54,7 @@ export default function HomePage() {
           />
           <JobCard
             title="Mobile App"
-            body="Außendienst und Hof-Prozesse am Nischen-ERP — inkl. Metz-Proof."
+            body="Außendienst und Mobile am Nischen-ERP — inkl. Metz-Proof."
             href="/#mobile"
           />
           <JobCard
