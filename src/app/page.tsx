@@ -2,19 +2,24 @@ import Link from "next/link";
 import { JobCard } from "@/components/JobCard";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
+import { MobileSection } from "@/components/MobileSection";
 import { EmailOrderDemo } from "@/components/demos/EmailOrderDemo";
 import { PriceListDemo } from "@/components/demos/PriceListDemo";
-import { WiegescheinDemo } from "@/components/demos/WiegescheinDemo";
 
 export default function HomePage() {
   return (
     <>
-      <section className="mx-auto max-w-site px-6 pb-14 pt-[72px]">
-        <h1 className="m-0 max-w-[16ch] text-[clamp(2rem,4vw,2.75rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          Bestellungen kommen per Mail. Preislisten als Excel.
+      <section className="mx-auto max-w-site px-6 pb-12 pt-[64px]">
+        <p className="mb-3 text-[0.8rem] font-semibold uppercase tracking-[0.06em] text-accent">
+          Der Layer über eurem ERP
+        </p>
+        <h1 className="m-0 max-w-[18ch] text-[clamp(2.1rem,4.2vw,2.9rem)] font-semibold leading-[1.12] tracking-[-0.03em]">
+          EpilaYer bereitet Vorgänge vor. Ihr gebt frei — dann geht es ins
+          System.
         </h1>
         <p className="mt-4 max-w-[38rem] text-[1.1rem] text-muted">
-          EpiLayer bereitet die Buchung vor und ihr gebt frei.
+          Bestellungen, Preislisten, Wiegescheine und Mobile — strukturiert für
+          euren Innendienst, angebunden an euer bestehendes ERP. Ohne Migration.
         </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a
@@ -30,7 +35,7 @@ export default function HomePage() {
       </section>
 
       <section id="loesungen" className="mx-auto max-w-site px-6 pb-16">
-        <div className="section-label">Was ihr angehen könnt</div>
+        <div className="section-label">Welchen Prozess wollt ihr angehen?</div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <JobCard
             title="Bestellung aus der E-Mail"
@@ -45,36 +50,56 @@ export default function HomePage() {
           <JobCard
             title="Wiegeschein erfassen"
             body="Scan oder PDF auslesen und den Vorgang vorbereiten."
+            href="/loesungen/wiegeschein"
+          />
+          <JobCard
+            title="Mobile App"
+            body="Außendienst und Hof-Prozesse am Nischen-ERP — inkl. Metz-Proof."
+            href="/#mobile"
           />
           <JobCard
             title="Euer eigener Prozess"
             body="Wenn etwas fehlt: eigener Baustein am gleichen System."
             dashed
+            href="#cta"
           />
         </div>
       </section>
 
       <section className="mx-auto max-w-site px-6 pb-16">
-        <div className="section-label">Bestellung aus der E-Mail</div>
+        <div className="mb-1 flex flex-wrap items-end justify-between gap-3">
+          <div className="section-label mb-0">Bestellung aus der E-Mail</div>
+          <Link
+            href="/loesungen/bestellung-aus-der-email"
+            className="text-[0.9rem] font-semibold text-accent hover:opacity-80"
+          >
+            Zur Lösung →
+          </Link>
+        </div>
         <EmailOrderDemo />
       </section>
 
       <section className="mx-auto max-w-site px-6 pb-16">
-        <div className="section-label">Preisliste vom Lieferanten</div>
+        <div className="mb-1 flex flex-wrap items-end justify-between gap-3">
+          <div className="section-label mb-0">Preisliste vom Lieferanten</div>
+          <Link
+            href="/loesungen/preisliste"
+            className="text-[0.9rem] font-semibold text-accent hover:opacity-80"
+          >
+            Zur Lösung →
+          </Link>
+        </div>
         <PriceListDemo />
       </section>
 
-      <section className="mx-auto max-w-site px-6 pb-16">
-        <div className="section-label">Wiegeschein</div>
-        <WiegescheinDemo />
-      </section>
+      <MobileSection />
 
       <section className="border-t border-line">
         <div className="mx-auto max-w-site px-6 py-14">
           <div className="section-label">So landet es im ERP</div>
           <FlowStrip
             steps={[
-              { title: "Eingang", detail: "Mail, PDF, Excel, Scan" },
+              { title: "Eingang", detail: "Mail, PDF, Excel, Scan, App" },
               { title: "Auslesen", detail: "Felder zuordnen" },
               { title: "Prüfen", detail: "Ihr schaut kurz drüber" },
               { title: "Ins ERP", detail: "Nach der Freigabe" },
@@ -89,11 +114,11 @@ export default function HomePage() {
             <div>
               <div className="section-label">Zum ERP</div>
               <h2 className="m-0 text-[1.6rem] font-semibold tracking-[-0.02em]">
-                EpiLayer dockt an euer ERP an.
+                EpilaYer dockt an euer ERP an.
               </h2>
               <p className="mt-2.5 max-w-xl text-muted">
                 Für die üblichen Prozesse gibt es fertige Bausteine. Fehlt
-                etwas, bauen wir ihn dazu.
+                etwas, bauen wir ihn dazu. Euer ERP bleibt System of Record.
               </p>
             </div>
             <div>
@@ -114,13 +139,14 @@ export default function HomePage() {
           <div className="section-label">Proof</div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.95rem] text-muted">
             <span>
-              Läuft bei mittelständischen Betrieben mit eigenem ERP
+              Läuft bei Metz (Außendienst-App) und weiteren mittelständischen
+              Betrieben mit eigenem ERP
             </span>
             <Link
-              href="#cta"
+              href="#mobile"
               className="font-semibold text-accent no-underline hover:opacity-80"
             >
-              Mehr dazu →
+              Mobile ansehen →
             </Link>
           </div>
         </div>
@@ -152,7 +178,7 @@ export default function HomePage() {
                 Euer ERP bleibt
               </h3>
               <p className="mt-2 text-[0.95rem] text-muted">
-                Keine Migration. EpiLayer dockt an und bereitet Vorgänge vor.
+                Keine Migration. EpilaYer dockt an und bereitet Vorgänge vor.
               </p>
             </div>
           </div>

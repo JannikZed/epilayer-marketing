@@ -1,6 +1,6 @@
-# EpiLayer Marketing Site
+# EpilaYer Marketing Site
 
-Produkt-Marketingseite (Deutsch) für EpiLayer — Next.js App Router, TypeScript, Tailwind CSS.
+Produkt-Marketingseite (Deutsch) für **EpilaYer** — Next.js App Router, TypeScript, Tailwind CSS.
 
 ## Lokal starten
 
@@ -29,12 +29,15 @@ npm run build:static   # schreibt nach out/
 
 | Route | Inhalt |
 |---|---|
-| `/` | Home: Hero, Job-Karten, Email-/Preislisten-/Wiegeschein-Demos, Flow, ERP, CTA |
+| `/` | Home: Positioning-Hero, Job-Routing, Email-/Preislisten-Demos, Mobile+Metz, Flow, ERP, CTA |
 | `/loesungen/bestellung-aus-der-email` | Job-Page mit EmailOrderDemo |
 | `/loesungen/preisliste` | Job-Page mit PriceListDemo |
+| `/loesungen/wiegeschein` | Job-Page mit WiegescheinDemo |
+| `/impressum` | Stub · trieb.work OHG, Leonhardstr 20a |
+| `/datenschutz` | Stub |
 
 ## Design Tokens
 
 Canvas `#F7F6F2` · Surface `#FFFFFF` · Ink `#1C1B19` · Muted `#5E5A54` · Line `#E4E0D8` · Accent `#C45C26` · OK `#2F6B4F` · Info `#DCE8E4`
 
-Offene Produktentscheidungen: `DECISIONS.md`
+Entscheidungen: `DECISIONS.md`

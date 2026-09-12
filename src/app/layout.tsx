@@ -12,18 +12,22 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "EpiLayer — Buchung vorbereiten, Freigabe behalten",
-    template: "%s · EpiLayer",
+    default: "EpilaYer — Der Layer über eurem ERP",
+    template: "%s · EpilaYer",
   },
   description:
-    "EpiLayer bereitet Bestellungen, Preislisten und Belege für euer ERP vor. Ihr prüft und gebt frei.",
+    "EpilaYer bereitet Bestellungen, Preislisten und Belege für euer ERP vor. Ihr prüft und gebt frei — ohne Migration.",
   metadataBase: new URL("https://epilayer.de"),
   openGraph: {
-    title: "EpiLayer",
+    title: "EpilaYer",
     description:
-      "Bestellungen aus der Mail, Preislisten aus Excel — vorbereitet für euer ERP.",
+      "Der Layer über eurem ERP. Vorgänge vorbereiten, Freigabe behalten.",
     locale: "de_DE",
     type: "website",
+  },
+  icons: {
+    icon: [{ url: "/favicon-32.png", sizes: "32x32", type: "image/png" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
   },
 };
 

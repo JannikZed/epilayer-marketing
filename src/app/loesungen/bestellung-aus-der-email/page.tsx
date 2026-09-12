@@ -7,7 +7,7 @@ import { EmailOrderDemo } from "@/components/demos/EmailOrderDemo";
 export const metadata: Metadata = {
   title: "Bestellung aus der E-Mail",
   description:
-    "Kunden schreiben Freitext oder schicken einen Anhang. EpiLayer macht daraus einen Auftragsvorschlag. Ihr gebt frei, dann geht er ins ERP.",
+    "Kunden schreiben Freitext oder schicken einen Anhang. EpilaYer macht daraus einen Auftragsvorschlag. Ihr gebt frei, dann geht er ins ERP.",
 };
 
 export default function EmailOrderPage() {
@@ -25,7 +25,7 @@ export default function EmailOrderPage() {
           Bestellung aus der E-Mail
         </h1>
         <p className="mt-3.5 max-w-[36rem] text-[1.05rem] text-muted">
-          Kunden schreiben Freitext oder schicken einen Anhang. EpiLayer macht
+          Kunden schreiben Freitext oder schicken einen Anhang. EpilaYer macht
           daraus einen Auftragsvorschlag. Ihr gebt frei, dann geht er ins ERP.
         </p>
         <a
@@ -72,6 +72,9 @@ export default function EmailOrderPage() {
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/loesungen/preisliste" className="pill hover:border-muted hover:text-ink">
             Preisliste vom Lieferanten →
+          </Link>
+          <Link href="/loesungen/wiegeschein" className="pill hover:border-muted hover:text-ink">
+            Wiegeschein →
           </Link>
           <Link href="/#loesungen" className="pill hover:border-muted hover:text-ink">
             Alle Lösungen →

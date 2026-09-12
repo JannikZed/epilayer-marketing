@@ -19,7 +19,7 @@ export function JobCard({ title, body, href, dashed }: JobCardProps) {
       <p className="m-0 text-[0.95rem] text-muted">{body}</p>
       {href ? (
         <div className="mt-[18px] text-[0.9rem] font-semibold text-accent">
-          Zur Lösung →
+          {dashed ? "Gespräch anfragen →" : "Zur Lösung →"}
         </div>
       ) : null}
     </>

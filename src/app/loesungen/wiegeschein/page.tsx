@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
-import { PriceListDemo } from "@/components/demos/PriceListDemo";
+import { WiegescheinDemo } from "@/components/demos/WiegescheinDemo";
 
 export const metadata: Metadata = {
-  title: "Preisliste vom Lieferanten",
+  title: "Wiegeschein erfassen",
   description:
-    "Excel oder PDF einlesen, Abweichungen zeigen, Preise übernehmen — mit Freigabe durch euren Innendienst.",
+    "Scan oder PDF auslesen, Felder zuordnen, Vorgang freigeben — dann ins ERP. Mit EpilaYer.",
 };
 
-export default function PriceListPage() {
+export default function WiegescheinPage() {
   return (
     <>
       <section className="mx-auto max-w-site px-6 pb-10 pt-8">
@@ -19,17 +19,18 @@ export default function PriceListPage() {
             Lösungen
           </Link>
           <span className="mx-2">/</span>
-          <span>Preisliste vom Lieferanten</span>
+          <span>Wiegeschein erfassen</span>
         </div>
         <h1 className="m-0 max-w-[18ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          Preisliste vom Lieferanten
+          Wiegeschein erfassen
         </h1>
         <p className="mt-3.5 max-w-[36rem] text-[1.05rem] text-muted">
-          Excel oder PDF einlesen, Abweichungen zeigen, Preise übernehmen.
+          Scan oder PDF auslesen und den Vorgang vorbereiten. Ihr prüft die
+          Werte, dann geht der Beleg ins ERP.
         </p>
         <a
           className="btn-primary mt-6"
-          href="mailto:hello@epilayer.de?subject=Termin%20Preisliste"
+          href="mailto:hello@epilayer.de?subject=Termin%20Wiegeschein"
         >
           Termin zu diesem Prozess
         </a>
@@ -39,9 +40,9 @@ export default function PriceListPage() {
         <div className="section-label">Flow</div>
         <FlowStrip
           steps={[
-            { title: "Eingang", detail: "Excel oder PDF" },
-            { title: "Auslesen", detail: "Artikel, Staffeln, Werke" },
-            { title: "Diff prüfen", detail: "Abweichungen markieren" },
+            { title: "Eingang", detail: "Scan oder PDF" },
+            { title: "Auslesen", detail: "Gewichte, Kennzeichen" },
+            { title: "Prüfen", detail: "Ihr schaut drüber" },
             { title: "Ins ERP", detail: "Nach der Freigabe" },
           ]}
         />
@@ -49,14 +50,14 @@ export default function PriceListPage() {
 
       <section className="mx-auto max-w-site px-6 pb-14">
         <div className="section-label">Zum Freigeben</div>
-        <PriceListDemo />
+        <WiegescheinDemo />
       </section>
 
       <section className="mx-auto max-w-site px-6 pb-6">
         <div className="section-label">Weitere Prozesse</div>
         <p className="m-0 max-w-xl text-muted">
-          Dazu passen später auch Bestellungen aus der E-Mail, Wiegescheine oder
-          ein eigener Baustein.
+          Dazu passen Bestellungen aus der E-Mail, Preislisten oder ein eigener
+          Baustein.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link
@@ -65,8 +66,11 @@ export default function PriceListPage() {
           >
             Bestellung aus der E-Mail →
           </Link>
-          <Link href="/loesungen/wiegeschein" className="pill hover:border-muted hover:text-ink">
-            Wiegeschein →
+          <Link
+            href="/loesungen/preisliste"
+            className="pill hover:border-muted hover:text-ink"
+          >
+            Preisliste →
           </Link>
           <Link href="/#loesungen" className="pill hover:border-muted hover:text-ink">
             Alle Lösungen →
@@ -75,10 +79,10 @@ export default function PriceListPage() {
       </section>
 
       <CtaSection
-        title="Passt das zu euren Preislisten?"
-        body="Wir schauen uns eine eurer Listen und euer ERP an."
+        title="Passt das zu euren Wiegescheinen?"
+        body="Wir schauen uns einen eurer Belege und euer ERP an."
         ctaLabel="Termin vereinbaren"
-        mailtoSubject="Termin Preisliste"
+        mailtoSubject="Termin Wiegeschein"
       />
     </>
   );

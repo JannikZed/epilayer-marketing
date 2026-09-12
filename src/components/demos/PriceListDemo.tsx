@@ -163,15 +163,16 @@ function DiffBadge({ oldVal, next }: { oldVal: number; next: number }) {
   const up = delta > 0;
   const flat = Math.abs(delta) < 0.005;
   if (flat) {
-    return <span className="text-[0.75rem] text-muted">±0 %</span>;
+    return <span className="whitespace-nowrap text-[0.75rem] text-muted">±0%</span>;
   }
+  const label = `${up ? "↑" : "↓"} ${Math.abs(pct).toFixed(1).replace(".", ",")}%`;
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.75rem] font-semibold ${
+      className={`inline-flex whitespace-nowrap items-center rounded-full px-2.5 py-0.5 text-[0.75rem] font-semibold ${
         up ? "bg-[#fde8d8] text-warn" : "bg-[#e4efe8] text-ok"
       }`}
     >
-      {up ? "↑" : "↓"} {Math.abs(pct).toFixed(1).replace(".", ",")} %
+      {label}
     </span>
   );
 }
@@ -309,8 +310,8 @@ export function PriceListDemo() {
                 <th className="px-3 py-2.5 font-semibold text-right">T2</th>
                 <th className="px-3 py-2.5 font-semibold text-right">T3</th>
                 <th className="px-3 py-2.5 font-semibold">Gültig</th>
-                <th className="px-3 py-2.5 font-semibold">Werk</th>
-                <th className="px-3 py-2.5 font-semibold">Diff T1</th>
+                <th className="whitespace-nowrap px-3 py-2.5 font-semibold">Werk</th>
+                <th className="whitespace-nowrap px-3 py-2.5 font-semibold">Diff T1</th>
               </tr>
             </thead>
             <tbody>
@@ -364,7 +365,7 @@ export function PriceListDemo() {
                         "—"
                       )}
                     </td>
-                    <td className="px-3 py-2 font-mono text-[0.75rem] text-muted">
+                    <td className="whitespace-nowrap px-3 py-2 font-mono text-[0.75rem] text-muted">
                       {visible ? row.plant : "—"}
                     </td>
                     <td className="px-3 py-2">
