@@ -22,14 +22,13 @@ export default function SupportAgentPage() {
           <span className="mx-2">/</span>
           <span>Support-Agent</span>
         </div>
-        <h1 className="m-0 max-w-[22ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          Interner Support-Agent, der eure Produkte kennt
+        <h1 className="m-0 max-w-[18ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
+          Antworten aus eurem Produktwissen.
         </h1>
         <p className="mt-3.5 max-w-[40rem] text-[1.05rem] text-muted">
-          EpilaYer stellt dem Innendienst einen KI-Agenten bereit, der auf
-          Dokumenten, Stammdaten und Vorgangshistorie eures Unternehmens
-          aufsetzt. Produktfragen, Ersatzteile und Antwortentwürfe — im
-          Firmenwissen, mit Freigabe bevor etwas nach außen geht.
+          Der Agent kennt eure Docs, Stammdaten und Historie. Innendienst fragt
+          nach Artikel, Ersatzteil oder Spezifikation und bekommt eine
+          fundierte Antwort. Nach außen geht nichts ohne Freigabe.
         </p>
         <a
           className="btn-primary mt-6"

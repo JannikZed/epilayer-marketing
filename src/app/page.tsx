@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="grid items-center gap-6 md:grid-cols-[1.4fr_1fr]">
             <div>
               <h2 className="m-0 max-w-[22ch] text-[1.5rem] font-semibold tracking-[-0.02em]">
-                Mobile Apps für Feld und Hof — am bestehenden ERP
+                Mobile Apps am bestehenden ERP
               </h2>
               <p className="mt-2.5 max-w-xl text-muted">
                 Außendienst, Lager und Disposition auf dem Handy. Bei Metz läuft

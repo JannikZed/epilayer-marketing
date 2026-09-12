@@ -22,14 +22,13 @@ export default function KundenportalPage() {
           <span className="mx-2">/</span>
           <span>B2B Kundenportal</span>
         </div>
-        <h1 className="m-0 max-w-[20ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          B2B-Portal auf eurem ERP — Self-Service für Kunden, Kontrolle bei euch
+        <h1 className="m-0 max-w-[16ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
+          Kundenportal für euer ERP.
         </h1>
         <p className="mt-3.5 max-w-[40rem] text-[1.05rem] text-muted">
-          EpilaYer stellt euren Bestandskunden ein Portal bereit: Stammdaten
-          aktualisieren, Nachbestellungen und Serviceanfragen stellen,
-          Dokumente und Produktwissen abrufen. Schreibende Vorgänge laufen über
-          Prüfung und Freigabe — das ERP bleibt System of Record.
+          Kunden aktualisieren Stammdaten, bestellen nach und holen Dokumente
+          selbst. Was ins ERP geschrieben wird, geht erst nach eurer Freigabe
+          raus. Das ERP bleibt euer System of Record.
         </p>
         <a
           className="btn-primary mt-6"

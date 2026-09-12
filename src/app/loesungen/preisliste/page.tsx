@@ -22,14 +22,13 @@ export default function PriceListPage() {
           <span className="mx-2">/</span>
           <span>Preisliste vom Lieferanten</span>
         </div>
-        <h1 className="m-0 max-w-[20ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          Preisliste vom Lieferanten — Diff prüfen, dann übernehmen
+        <h1 className="m-0 max-w-[18ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
+          Lieferantenpreise aus Excel, ohne Abtippen.
         </h1>
         <p className="mt-3.5 max-w-[40rem] text-[1.05rem] text-muted">
-          Lieferanten schicken Excel oder PDF. EpilaYer liest Artikel, Staffeln
-          und Werke aus, zeigt Abweichungen zu euren aktuellen Preisen und
-          bereitet die Übernahme vor. Ins ERP erst nach Freigabe durch den
-          Innendienst.
+          Die Liste kommt als Excel oder PDF. EpilaYer liest Artikel und Staffeln
+          aus und zeigt, was sich gegenüber euren aktuellen Preisen geändert hat.
+          Ihr gebt frei, dann landen die Preise im ERP.
         </p>
         <a
           className="btn-primary mt-6"

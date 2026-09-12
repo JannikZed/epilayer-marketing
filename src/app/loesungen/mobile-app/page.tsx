@@ -22,14 +22,13 @@ export default function MobileAppPage() {
           <span className="mx-2">/</span>
           <span>Mobile App</span>
         </div>
-        <h1 className="m-0 max-w-[20ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          Mobile Apps für euer ERP — Feld und Hof ohne Systemwechsel
+        <h1 className="m-0 max-w-[18ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
+          Außendienst-App am bestehenden ERP.
         </h1>
         <p className="mt-3.5 max-w-[40rem] text-[1.05rem] text-muted">
-          EpilaYer bringt ausgewählte Prozesse aufs Handy: Außendienst, Lager,
-          Wareneingang und Disposition. Angebunden an euer bestehendes ERP, mit
-          Freigabe wo es drauf ankommt. Bei Metz läuft die Außendienst-App
-          bereits produktiv.
+          Besuche und Aufträge unterwegs erfassen, Lager und Disposition am
+          Handy. Angebunden an euer ERP. Bei Metz läuft die Außendienst-App
+          bereits produktiv. Freigabe bleibt im Innendienst.
         </p>
         <a
           className="btn-primary mt-6"

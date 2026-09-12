@@ -22,14 +22,13 @@ export default function EmailOrderPage() {
           <span className="mx-2">/</span>
           <span>Bestellung aus der E-Mail</span>
         </div>
-        <h1 className="m-0 max-w-[20ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          Bestellung aus der E-Mail — freigabereif ins ERP
+        <h1 className="m-0 max-w-[16ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
+          Bestellungen aus dem Posteingang.
         </h1>
         <p className="mt-3.5 max-w-[40rem] text-[1.05rem] text-muted">
-          Kunden schreiben Freitext oder schicken einen Anhang. EpilaYer
-          erkennt die Bestellung, liest Kunde, Artikel und Mengen aus und legt
-          einen Auftragsvorschlag bereit. Schreiben ins ERP erst nach eurer
-          Freigabe.
+          Kunden schreiben Freitext oder schicken einen Anhang. EpilaYer baut
+          daraus den Auftragsvorschlag mit Kunde, Artikel und Menge. Ihr schaut
+          kurz drüber und gebt frei.
         </p>
         <a
           className="btn-primary mt-6"

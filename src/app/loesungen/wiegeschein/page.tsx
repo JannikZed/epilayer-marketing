@@ -22,13 +22,12 @@ export default function WiegescheinPage() {
           <span className="mx-2">/</span>
           <span>Wiegeschein erfassen</span>
         </div>
-        <h1 className="m-0 max-w-[20ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
-          Wiegeschein erfassen — Scan rein, Vorgang prüfen, ERP buchen
+        <h1 className="m-0 max-w-[16ch] text-[clamp(1.8rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-[-0.03em]">
+          Wiegescheine nicht mehr abtippen.
         </h1>
         <p className="mt-3.5 max-w-[40rem] text-[1.05rem] text-muted">
-          Scan oder PDF auslesen und den Vorgang vorbereiten. EpilaYer
-          erkennt Gewichte, Kennzeichen und Belegfelder. Ihr prüft die Werte —
-          dann geht der Beleg ins ERP.
+          Scan oder PDF rein. EpilaYer zieht Gewichte und Kennzeichen. Ihr
+          prüft die Werte, dann geht der Beleg ins ERP.
         </p>
         <a
           className="btn-primary mt-6"
