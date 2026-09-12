@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #f7f6f2;
+  --surface: #ffffff;
+  --ink: #1c1b19;
+  --muted: #5e5a54;
+  --line: #e4e0d8;
+  --accent: #c45c26;
+  --ok: #2f6b4f;
+  --warn: #a15c12;
+  --info: #dce8e4;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background: var(--canvas);
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(196, 92, 38, 0.18);
+  color: var(--ink);
+}
+
+@keyframes scanSweep {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(210px);
+    opacity: 0;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-accent px-[18px] py-3 text-[0.95rem] font-semibold text-white transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-default disabled:opacity-45;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-lg border border-line bg-transparent px-[18px] py-3 text-[0.95rem] font-semibold text-ink transition-colors hover:bg-surface focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink disabled:cursor-default disabled:opacity-45;
+  }
+  .section-label {
+    @apply mb-3.5 text-[0.75rem] font-semibold uppercase tracking-[0.06em] text-muted;
+  }
+  .pill {
+    @apply inline-flex items-center rounded-full border border-line bg-surface px-3 py-1.5 text-[0.85rem] text-muted;
+  }
+}
