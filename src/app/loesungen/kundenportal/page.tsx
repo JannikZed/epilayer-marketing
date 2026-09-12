@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
+import { ErpFit } from "@/components/ErpFit";
 import { PortalDemo } from "@/components/demos/PortalDemo";
 
 export const metadata: Metadata = {
@@ -37,6 +38,11 @@ export default function KundenportalPage() {
           Termin zum Kundenportal
         </a>
       </section>
+
+      <ErpFit
+        erps={["Service ERP L3", "Sage 100", "enwis", "drink.PRO", "BISON"]}
+        why="Mittelstands-ERPs oft ohne fertiges Kundenportal — EpilaYer ergänzt Stammdaten, Bestellung, Wissen und Service als Layer."
+      />
 
       <section className="mx-auto max-w-site px-6 pb-12">
         <div className="section-label">Wofür das Portal gedacht ist</div>

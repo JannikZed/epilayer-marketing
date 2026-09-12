@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
+import { ErpFit } from "@/components/ErpFit";
 import { PriceListDemo } from "@/components/demos/PriceListDemo";
 
 export const metadata: Metadata = {
@@ -37,6 +38,11 @@ export default function PriceListPage() {
           Termin zu diesem Prozess
         </a>
       </section>
+
+      <ErpFit
+        erps={["Service ERP L3", "Sage 100", "enwis"]}
+        why="Lieferantenpreislisten kommen hier oft noch als Excel oder PDF — EpilaYer zeigt den Diff und bereitet die Übernahme vor."
+      />
 
       <section className="mx-auto max-w-site px-6 pb-12">
         <div className="section-label">Das Problem</div>

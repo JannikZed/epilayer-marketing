@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
+import { ErpFit } from "@/components/ErpFit";
 import { EmailOrderDemo } from "@/components/demos/EmailOrderDemo";
 
 export const metadata: Metadata = {
@@ -37,6 +38,11 @@ export default function EmailOrderPage() {
           Termin zu diesem Prozess
         </a>
       </section>
+
+      <ErpFit
+        erps={["Service ERP L3", "Sage 100", "enwis", "gevis"]}
+        why="Systeme, in denen der Auftragseingang oft noch per Mail und Anhang ankommt — EpilaYer bereitet den Auftragsvorschlag vor."
+      />
 
       <section className="mx-auto max-w-site px-6 pb-12">
         <div className="section-label">Das Problem im Innendienst</div>

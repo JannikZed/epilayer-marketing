@@ -21,17 +21,17 @@ const tiles = [
 
 export function MobileSection() {
   return (
-    <section id="mobile" className="border-t border-line">
+    <section className="border-t border-line">
       <div className="mx-auto max-w-site px-6 py-14">
-        <div className="section-label">Mobile Apps</div>
+        <div className="section-label">Einsatzbereiche</div>
         <div className="grid items-start gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h2 className="m-0 max-w-[20ch] text-[1.6rem] font-semibold tracking-[-0.02em]">
-              Mobile Apps für euer ERP
+              Was die App abdeckt
             </h2>
             <p className="mt-2.5 max-w-xl text-muted">
-              EpilaYer bringt ausgewählte Prozesse aufs Handy — angebunden an
-              euer bestehendes System, mit Freigabe wo es drauf ankommt.
+              Ausgewählte Prozesse auf dem Handy — angebunden an euer
+              bestehendes System, mit Freigabe wo es drauf ankommt.
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {tiles.map((t) => (

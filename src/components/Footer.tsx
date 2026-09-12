@@ -50,6 +50,9 @@ export function Footer() {
             <Link href="/loesungen/support-agent" className="hover:text-ink">
               Support-Agent
             </Link>
+            <Link href="/loesungen/mobile-app" className="hover:text-ink">
+              Mobile App
+            </Link>
           </div>
         </div>
 
@@ -58,7 +61,7 @@ export function Footer() {
             Produkt
           </div>
           <div className="mt-3 flex flex-col gap-2 text-[0.9rem] text-muted">
-            <Link href="/#mobile" className="hover:text-ink">
+            <Link href="/loesungen/mobile-app" className="hover:text-ink">
               Mobile App
             </Link>
             <Link href="/#erp" className="hover:text-ink">

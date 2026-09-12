@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
+import { ErpFit } from "@/components/ErpFit";
 import { WiegescheinDemo } from "@/components/demos/WiegescheinDemo";
 
 export const metadata: Metadata = {
@@ -36,6 +37,11 @@ export default function WiegescheinPage() {
           Termin zu diesem Prozess
         </a>
       </section>
+
+      <ErpFit
+        erps={["enwis", "Service ERP L3"]}
+        why="Typisch für Wiege- und Hofzettel-Workflows — Scan rein, Vorgang prüfen, dann ins ERP."
+      />
 
       <section className="mx-auto max-w-site px-6 pb-12">
         <div className="section-label">Das Problem</div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
+import { ErpFit } from "@/components/ErpFit";
 import { SupportAgentDemo } from "@/components/demos/SupportAgentDemo";
 
 export const metadata: Metadata = {
@@ -37,6 +38,11 @@ export default function SupportAgentPage() {
           Termin zum Support-Agent
         </a>
       </section>
+
+      <ErpFit
+        erps={["Service ERP L3", "Sage 100", "enwis", "gevis"]}
+        why="Innendienst braucht Produktwissen und Historie zusätzlich zum ERP — der Agent setzt auf Docs und Stammdaten auf."
+      />
 
       <section className="mx-auto max-w-site px-6 pb-12">
         <div className="section-label">Einsatz im Innendienst</div>

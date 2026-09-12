@@ -2,9 +2,6 @@ import Link from "next/link";
 import { JobCard } from "@/components/JobCard";
 import { FlowStrip } from "@/components/FlowStrip";
 import { CtaSection } from "@/components/CtaSection";
-import { MobileSection } from "@/components/MobileSection";
-import { EmailOrderDemo } from "@/components/demos/EmailOrderDemo";
-import { PriceListDemo } from "@/components/demos/PriceListDemo";
 
 export default function HomePage() {
   return (
@@ -66,7 +63,7 @@ export default function HomePage() {
           <JobCard
             title="Mobile App"
             body="Außendienst-App am ERP. Bei Metz bereits im Einsatz."
-            href="/#mobile"
+            href="/loesungen/mobile-app"
           />
           <JobCard
             title="Euer eigener Prozess"
@@ -76,34 +73,6 @@ export default function HomePage() {
           />
         </div>
       </section>
-
-      <section className="mx-auto max-w-site px-6 pb-16">
-        <div className="mb-1 flex flex-wrap items-end justify-between gap-3">
-          <div className="section-label mb-0">Bestellung aus der E-Mail</div>
-          <Link
-            href="/loesungen/bestellung-aus-der-email"
-            className="text-[0.9rem] font-semibold text-accent hover:opacity-80"
-          >
-            Zur Lösung →
-          </Link>
-        </div>
-        <EmailOrderDemo />
-      </section>
-
-      <section className="mx-auto max-w-site px-6 pb-16">
-        <div className="mb-1 flex flex-wrap items-end justify-between gap-3">
-          <div className="section-label mb-0">Preisliste vom Lieferanten</div>
-          <Link
-            href="/loesungen/preisliste"
-            className="text-[0.9rem] font-semibold text-accent hover:opacity-80"
-          >
-            Zur Lösung →
-          </Link>
-        </div>
-        <PriceListDemo />
-      </section>
-
-      <MobileSection />
 
       <section className="border-t border-line">
         <div className="mx-auto max-w-site px-6 py-14">
@@ -116,6 +85,45 @@ export default function HomePage() {
               { title: "Ins ERP", detail: "Nach der Freigabe" },
             ]}
           />
+        </div>
+      </section>
+
+      <section className="border-t border-line">
+        <div className="mx-auto max-w-site px-6 py-14">
+          <div className="section-label">Mobile &amp; Außendienst</div>
+          <div className="grid items-center gap-6 md:grid-cols-[1.4fr_1fr]">
+            <div>
+              <h2 className="m-0 max-w-[22ch] text-[1.5rem] font-semibold tracking-[-0.02em]">
+                Mobile Apps für Feld und Hof — am bestehenden ERP
+              </h2>
+              <p className="mt-2.5 max-w-xl text-muted">
+                Außendienst, Lager und Disposition auf dem Handy. Bei Metz läuft
+                die Außendienst-App produktiv. Freigabe und Buchung bleiben im
+                Innendienst.
+              </p>
+              <Link
+                href="/loesungen/mobile-app"
+                className="mt-5 inline-block text-[0.95rem] font-semibold text-accent no-underline hover:opacity-80"
+              >
+                Mobile App &amp; Metz-UI ansehen →
+              </Link>
+            </div>
+            <Link
+              href="/loesungen/mobile-app"
+              className="rounded-card border border-line bg-surface p-5 shadow-soft transition-shadow hover:shadow-md"
+            >
+              <div className="text-[0.75rem] font-semibold uppercase tracking-[0.06em] text-muted">
+                Proof · Metz
+              </div>
+              <h3 className="mt-2 m-0 text-[1.1rem] font-semibold tracking-[-0.01em]">
+                Außendienst-App im Einsatz
+              </h3>
+              <p className="mt-2 m-0 text-[0.95rem] text-muted">
+                Besuche und Vorgänge vom Feld — Produkt-UI und Abläufe auf der
+                Lösungsseite.
+              </p>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -172,7 +180,7 @@ export default function HomePage() {
                 <li>Freigabe im Innendienst, bevor etwas ins ERP geschrieben wird</li>
               </ul>
               <Link
-                href="#mobile"
+                href="/loesungen/mobile-app"
                 className="mt-5 inline-block text-[0.9rem] font-semibold text-accent no-underline hover:opacity-80"
               >
                 Mobile UI ansehen →

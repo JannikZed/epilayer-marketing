@@ -9,7 +9,7 @@ Stand: 2026-09-12. Locked decisions sind verbindlich.
 - [x] Nie **Agrarhandel** sagen (Branche/Wort vermeiden)
 - [x] **Impressum:** trieb.work OHG, Leonhardstr 20a
 - [x] Interactive Demos sind TOP — EmailOrderDemo, PriceListDemo, WiegescheinDemo, PortalDemo, SupportAgentDemo Qualität halten
-- [x] Homepage: starker Positioning-Hero → Job-Routing zu Subpages → Demos → Mobile/Proof → Flow/ERP/Security/CTA
+- [x] Homepage: starker Positioning-Hero → Job-Routing zu Subpages → kurzer Flow/Mobile-Teaser → ERP/Referenzen/Security/CTA (Demos nur auf Subpages)
 - [x] Logo-Mark (orange Layer) in Header + Favicon; Wordmark EpilaYer daneben
 - [x] Job-Seiten als eigene URLs unter `/loesungen/...`
 - [x] Impressum/Datenschutz: eigene Stubs unter `/impressum`, `/datenschutz` (trieb.work OHG)
@@ -20,6 +20,10 @@ Stand: 2026-09-12. Locked decisions sind verbindlich.
 - [x] Lösungssäulen ergänzt: **B2B Kundenportal** (`/loesungen/kundenportal`), **Support-Agent** (`/loesungen/support-agent`)
 - [x] Proof: kein „Mock-UI“ — Produkt-UI / laufender Einsatz
 - [x] Qualitative Outcomes only — keine erfundenen KPIs/Zahlen
+
+- [x] **Home = Catch + Route:** keine vollen Demo-Embeds und keine volle MobileSection auf `/`; Demos und Mobile leben auf Subpages
+- [x] **Mobile** unter `/loesungen/mobile-app` (JobCard, Nav, Footer, Referenzen-Link)
+- [x] **ErpFit** („Passt z. B. zu“) auf jeder Prozessseite — knappe, ehrliche ERP-Beispiele; Kundenportal: „oft ohne fertiges Kundenportal“
 
 ## Offen / Feintuning
 

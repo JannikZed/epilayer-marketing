@@ -3,9 +3,10 @@ import Link from "next/link";
 
 const nav = [
   { href: "/#loesungen", label: "Lösungen" },
+  { href: "/loesungen/bestellung-aus-der-email", label: "Bestellung" },
   { href: "/loesungen/kundenportal", label: "Kundenportal" },
   { href: "/loesungen/support-agent", label: "Support-Agent" },
-  { href: "/#mobile", label: "Mobile" },
+  { href: "/loesungen/mobile-app", label: "Mobile" },
   { href: "/#referenzen", label: "Referenzen" },
   { href: "/#sicherheit", label: "Sicherheit" },
 ];
